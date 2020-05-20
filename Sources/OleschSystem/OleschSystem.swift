@@ -6,6 +6,11 @@ public class OleschSystem {
         @State var title: String
         @State var action: () -> Void
         
+        public init(title: String, action: @escaping () -> Void) {
+            self._title = State(initialValue: title)
+            self._action = State(initialValue: action)
+        }
+        
         public var body: some View  {
             Button(action: action) {
                 Text(title)
