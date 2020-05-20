@@ -5,9 +5,9 @@ import SwiftUI
 final class OleschSystemTests: XCTestCase {
     func testExample() {
         var body: some View {
-            OleschSystem.MainButton(title: "Tap Me!", action: {
+            OleschSystem.MainButton(title: "Tap Me!") {
                 print("You tapped me!")
-            })
+            }
         }
     }
 
